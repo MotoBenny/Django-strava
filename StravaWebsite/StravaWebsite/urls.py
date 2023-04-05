@@ -19,5 +19,5 @@ from StravaMap import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('stravaMap.urls')),
+    path('', include('StravaMap.urls')),
 ]
