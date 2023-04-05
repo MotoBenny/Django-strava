@@ -19,7 +19,7 @@ def base_map(request):
 
 def connected_map(request):
     # Make your map object
-    main_map = folium.Map(location=[43.45, -80.476], zoom_start = 12) # Create base map
+    main_map = folium.Map(location = [47.608, -122.335], zoom_start = 12) # Create base map
     user = request.user # Pulls in the Strava User data
     strava_login = user.social_auth.get(provider='strava') # Strava login
     access_token = strava_login.extra_data['access_token'] # Strava Access token
